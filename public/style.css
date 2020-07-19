@@ -1,0 +1,87 @@
+/* color theam 
+#05386B
+#379683
+#5CDB95
+#EDF5E1 */
+
+/* font-family: "Montserrat", "Source Sans Pro", "Varela Round", "Vollkorn"; */
+
+* {    
+    margin: 0;
+    padding: 0;
+}
+body {
+ background-color: #EDF5E1;
+ font-family: "Montserrat", "Source Sans Pro", "Varela Round", "Vollkorn";
+}
+
+
+
+ul { 
+  font-family: "Varela Round";
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #379683;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #5CDB95;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 990px) {
+  .navbar-expand-lg {
+    float: right;
+    margin-left: 20px;
+  }
+  .navbar-dark{
+    color: #379683;
+    background-color: #379683;    
+    width: 100%;
+  }
+    ul {
+      position: relative;
+      font-family: "Varela Round";
+      list-style-type: none;     
+      text-align: center;
+      width: 100%;
+      background-color: #379683;
+            
+    }
+    li {
+      float: none;
+    }
+  li a {
+    display: inline-block;  
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #5CDB95;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+   }
