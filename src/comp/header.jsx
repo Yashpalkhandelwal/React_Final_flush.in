@@ -2,36 +2,35 @@ import React from "react";
 import Navbartop from "./navbartop"
 import Slider from "./slide"
 
-const menuName = [
-    {
-        key: 1,
-        navbarmenuname: "Home",
-        link: "#"
-    }, {
-        key: 2,
-        navbarmenuname: "Features",
-        link: "#"
-    }, {
-        key: 3,
-        navbarmenuname: "Problem",
-        link: "#"
-    }, {
-        key: 4,
-        navbarmenuname: "Solution",
-        link: "#"
-    }, {
-        key: 5,
-        navbarmenuname: "Team",
-        link: "#"
-    }
-        {
-        key: 6,
-        navbarmenuname: "Contact",
-        link: "#"
-    }
-];
-
 export default function Header() {
+    const notes = [
+        {
+            key: 1,
+            navbarmenuname: "Home",
+            link: "#"
+        }, {
+            key: 2,
+            navbarmenuname: "Features",
+            link: "#"
+        }, {
+            key: 3,
+            navbarmenuname: "Problem",
+            link: "#"
+        }, {
+            key: 4,
+            navbarmenuname: "Solution",
+            link: "#"
+        }, {
+            key: 5,
+            navbarmenuname: "Team",
+            link: "#"
+        }, {
+            key: 6,
+            navbarmenuname: "Contact",
+            link: "#"
+        }
+    ];
+
     return (
         <div>
             <nav className="navbar-expand-lg navbar-dark">
@@ -47,14 +46,16 @@ export default function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <ul>
+
                         {
-                            menuName.map(
-                                name => <Navbartop 
-                                key={name.id} 
-                                title={name.navbarmenuname} 
-                                link={name.link}/>
-                            )
+                            notes.map(
+                                nameIteam => <Navbartop
+                                    key={nameIteam.id}
+                                    navbarmenuname={nameIteam.navbarmenuname}
+                                    link={nameIteam.link}/> )
+                                                               
                         }
+
                     </ul>
                 </div>
             </nav>
